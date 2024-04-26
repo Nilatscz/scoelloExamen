@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="scoelloExamen.Vistas.Acercde"
+             Title="Acercde">
+    <VerticalStackLayout>
+        <Label Text="Sistema creado por Nilats"
+TextColor="red"
+Grid.Row="0"
+Grid.Column="0"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+  
+        <Label Text="Estudiante Stalin Coello"
+TextColor="Red"
+Grid.Row="1"
+Grid.Column="0"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+        <Label Text="Curso: Septimo "
+TextColor="Red"
+Grid.Row="1"
+Grid.Column="0"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+        <Label Text="Carrera: Ing. Inrormatica"
+TextColor="Red"
+Grid.Row="1"
+Grid.Column="0"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+        <Label Text="Año 2024"
+TextColor="Red"
+Grid.Row="1"
+Grid.Column="0"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+
+        <Button
+x:Name="btncontinuar"
+Text="Login"
+Clicked="btncontinuar_Clicked"
+
+></Button>
+    </VerticalStackLayout>
+</ContentPage>

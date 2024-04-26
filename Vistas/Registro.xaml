@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="scoelloExamen.Vistas.Registro"
+             Title="Registro">
+    <VerticalStackLayout
+ Padding="30,0"
+ Spacing="25">
+        <Image
+ Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png"
+ HeightRequest="90"
+ Aspect="AspectFit"
+ SemanticProperties.Description="dot net bot in a race car number eight"
+/>
+        <Label
+ x:Name="LblUsuario"
+ HorizontalTextAlignment="End"
+ FontSize="14"
+
+ />
+        <Label
+ Text="Registro"
+ TextColor="Blue"
+ FontSize="Medium"
+ VerticalOptions="Center"
+ HorizontalTextAlignment="Center"
+ />
+        <DatePicker x:Name="dpFecha"
+Format="MM/dd/yyy"
+        Margin="10"/>
+        <Picker x:Name="pkPais" Title="Elegir Pais">
+            <Picker.Items>
+                <x:String>Ecuador</x:String>
+                <x:String>Cuba</x:String>
+                <x:String>ee-uu</x:String>
+
+            </Picker.Items>
+
+        </Picker>
+        <Picker x:Name="pkCiudad" Title="Elegir ciudad">
+            <Picker.Items>
+                <x:String>Quito</x:String>
+                <x:String>Caribe</x:String>
+                <x:String>New York</x:String>
+
+            </Picker.Items>
+        </Picker>
+
+        <Grid>
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="80*"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            
+            </Grid.ColumnDefinitions>
+           
+            
+            <Label Text="Monto inicial"
+TextColor="blue"
+Grid.Row="0"
+Grid.Column="0"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+            <Entry
+x:Name="Txtmontoi"
+Placeholder="inicial"
+Grid.Row="0"
+Grid.Column="1"/>
+            <Label Text="Pago mensual"
+TextColor="Blue"
+Grid.Row="1"
+Grid.Column="0"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+            
+            <Label x:Name="Lbcuota"
+                   TextColor="Blue"
+Grid.Row="1"
+Grid.Column="1"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+           
+
+        </Grid>
+
+        <Button
+ x:Name="btnCalcular"
+ Text="Calculo del pago"
+ Clicked="btnCalcular_Clicked"
+ />
+        <Button
+x:Name="btnResumen"
+Text="Resumen"
+Clicked="btnResumen_Clicked"
+/>
+    </VerticalStackLayout>
+</ContentPage>

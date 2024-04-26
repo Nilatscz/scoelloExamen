@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="scoelloExamen.Vistas.Resumen"
+             Title="Resumen">
+    <VerticalStackLayout>
+        <Label 
+            Text="Resumen"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Grid>
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="2*"/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Text="Nombre"
+TextColor="red"
+Grid.Row="0"
+Grid.Column="0"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+            <Label
+x:Name="TxtNombre"
+
+Grid.Row="0"
+Grid.Column="1"/>
+            <Label Text="Apellido"
+TextColor="Red"
+Grid.Row="1"
+Grid.Column="0"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+                <Grid>
+           <Grid.RowDefinitions>
+
+               <RowDefinition Height="2*"/>
+               <RowDefinition/>
+               <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+           <Grid.ColumnDefinitions>
+               <ColumnDefinition Width="200"/>
+               <ColumnDefinition/>
+           </Grid.ColumnDefinitions>
+           <Label Text="Nombre"
+TextColor="red"
+Grid.Row="0"
+Grid.Column="0"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+           <Label
+x:Name="Txtnombre"
+
+Grid.Row="0"
+Grid.Column="1"/>
+           <Label Text="apellido"
+TextColor="Red"
+Grid.Row="1"
+Grid.Column="0"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+           <Label
+x:Name="Txtapellido"
+Grid.Row="1"
+Grid.Column="1"/>
+                <Label Text="Edad"
+TextColor="Red"
+Grid.Row="2"
+Grid.Column="0"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+                <Label
+x:Name="TxtEdad"
+Grid.Row="2"
+Grid.Column="2"/>
+                <Label Text="fecha"
+TextColor="Red"
+Grid.Row="3"
+Grid.Column="0"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+                <Label
+x:Name="Fecha"
+Grid.Row="1"
+Grid.Column="1"/>
+                <Label Text="Ciudad"
+TextColor="Red"
+Grid.Row="1"
+Grid.Column="0"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+                <Label
+x:Name="Txtciudad"
+Grid.Row="1"
+Grid.Column="1"/>
+                <Label Text="pais"
+TextColor="Red"
+Grid.Row="1"
+Grid.Column="0"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+                <Label
+x:Name="Txtpais"
+Grid.Row="1"
+Grid.Column="1"/>
+                <Label Text="Minicial"
+TextColor="Red"
+Grid.Row="1"
+Grid.Column="0"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+                <Label
+x:Name="Txtminicial"
+Grid.Row="1"
+Grid.Column="1"/>
+                <Label Text="pmensual"
+TextColor="Red"
+Grid.Row="1"
+Grid.Column="0"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+                <Label
+x:Name="Txtpmensual"
+Grid.Row="1"
+Grid.Column="1"/>
+                <Label Text="Total"
+TextColor="Red"
+Grid.Row="1"
+Grid.Column="0"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+                <Label
+x:Name="Txtatotal"
+Grid.Row="1"
+Grid.Column="1"/>
+
+
+
+            </Grid>
+        </Grid>
+
+        <Button
+x:Name="btnfinal"
+Text="Inicio"
+Clicked="btnfinal_Clicked"
+
+></Button>
+    </VerticalStackLayout>
+</ContentPage>
